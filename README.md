@@ -84,6 +84,6 @@ Response:
 
 ## 🧠 Contact Me
 
-Looking for a freelance ML developer or intern?
+Looking for a Data Scientist, freelance ML developer or intern?
 
 📧 **Email**: [msaini720415@gmail.com](mailto:msaini720415@gmail.com)
