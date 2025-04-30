@@ -77,7 +77,7 @@ Response:
 **Manish Saini**  
 🎓 B.E. in Computer Science, Chandigarh University  
 📍 Alwar, Rajasthan  
-🔗 [LinkedIn](https://www.linkedin.com/in/your-linkedin-id)  
+🔗 [LinkedIn](https://www.linkedin.com/in/manish-saini-274a371b4/)  
 🛠️ 6-Star HackerRank | 1200+ DSA Problems Solved
 
 ---
