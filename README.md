@@ -19,13 +19,6 @@ This project predicts whether a customer will churn (leave) based on historical 
 **Source**: [Kaggle - Telco Customer Churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)  
 **Records**: 7,000+ customer records  
 **Target**: `Churn` (Yes/No)  
-**Features**: 
-- Demographics 
-- Services subscribed 
-- Billing information 
-- Account tenure 
-
----
 
 ## ⚙️ Technologies Used
 
@@ -43,28 +36,17 @@ This project predicts whether a customer will churn (leave) based on historical 
 
 ---
 
-## 🛠️ Project Structure
-Customer-Churn-Prediction/
-├── app.py # Flask API
-├── requirements.txt # Package dependencies
-├── model/
-│ └── churn_prediction_model.pkl
-├── notebooks/
-│ ├── EDA_and_Cleaning.ipynb
-│ └── Model_Training_and_Evaluation.ipynb
-└── README.md
-
-
----
 
 ## 📈 Model Performance
 
-| Model                | Accuracy | Precision | Recall | F1 Score |
-|----------------------|----------|-----------|--------|----------|
-| Logistic Regression  | 79.5%    | 74%       | 68%    | 71%      |
-| Random Forest        | 83.2%    | 78%       | 75%    | 76.5%    |
+| Model               | Accuracy | Precision | Recall | Specificity | F1 Score | ROC AUC | Confusion Matrix       |
+|---------------------|----------|-----------|--------|-------------|----------|---------|------------------------|
+| Gradient Boosting   | 81.94%   | 69.03%    | 57.95% | 90.61%      | 62.99%   | 87.58%  | [[938, 97], [157, 217]] |
+| XGBoost             | 80.05%   | 64.08%    | 56.50% | 88.56%      | 60.04%   | 85.43%  | [[916, 118], [163, 211]] |
+| Random Forest       | 80.49%   | 66.11%    | 54.31% | 89.95%      | 59.59%   | 85.26%  | [[931, 104], [171, 203]] |
+| Decision Tree       | 75.32%   | 53.42%    | 55.16% | 82.61%      | 54.25%   | 68.95%  | [[855, 180], [168, 206]] |
 
-*Results obtained from 5-fold cross validation*
+*Metrics obtained from cross-validation testing*
 
 ---
 
@@ -80,7 +62,7 @@ Customer-Churn-Prediction/
 **Request Format**:
 ```json
 {
-  "features": [0, 1, 0, 2, 1, 45, 1, 0, 2, 0, 1, 0, 0, 1, 0, 3, 0, 1, 60.5, 2435.6]
+  "features": [1, 0, 2, 1, 45, 1, 0, 2, 0, 1, 0, 0, 1, 0, 3, 0, 1, 60.5, 2435.6]
 }
 ```
 Response:
@@ -105,4 +87,3 @@ Response:
 Looking for a freelance ML developer or intern?
 
 📧 **Email**: [msaini720415@gmail.com](mailto:msaini720415@gmail.com)
-# Customer-Churn
